@@ -49,21 +49,19 @@
 def jumpingOnClouds(c)
   count = 0
   i = 0
-  while i <= c.length do
-      puts count
-      puts i
+  while i < c.length do
       if c[i+2] === 1
           count+=1
           i+=1
-      elsif i+1 === c.length-1
+      elsif i+1 === c.length - 1 # second to last
           i += 1
           count+=1
+      elsif i === c.length-1 # last
+          count = count
+          i += 1
       else
-          count+=1
+          count += 1
           i+=2
       end
-      i = i + 1
   end
   
-  count
-end
