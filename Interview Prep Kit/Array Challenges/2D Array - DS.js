@@ -45,3 +45,12 @@ function hourglassSum(arr) {
 
 
 hourglassSum(sample)
+
+
+// this currently solves all but one case and I know why, but I would likely have to refactor the whole problem
+
+// to explain, the way that I coded this originally was to not even consider terms where the hourglass shape cannot be indexed from the array. For example on the edge of the array, since you can't index outside of the matrix, then ignore that case. Unfortunately, I think that the way the problem is written it wants you to if you can't index those, then their value should default to 0.
+
+// As a result, it would be much easier to program that logic if I never flattened the array at all, and instead used nested for loops.
+
+// I really just want to work on something new right now so I am not going to do that.
